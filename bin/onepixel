@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+require('../lib/onepixel').listen(process.env.PORT||8888)

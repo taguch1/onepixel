@@ -1,0 +1,33 @@
+{
+  "name": "onepixel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --check-leaks --reporter spec --bail test/**/*",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/**/*"
+  },
+  "bin": {
+    "onepixel": "./bin/onepixel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/taguch1/onepixel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taguch1/onepixel/issues"
+  },
+  "homepage": "https://github.com/taguch1/onepixel",
+  "dependencies": {
+    "finalhandler": "^0.4.0",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "power-assert": "^0.11.0",
+    "supertest": "^1.0.1"
+  }
+}
