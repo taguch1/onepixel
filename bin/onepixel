@@ -1,2 +1,4 @@
 #!/usr/bin/env node
 require('../lib/onepixel').listen(process.env.PORT||8888)
+process.on('SIGINT', process.exit)
+process.on("uncaughtException", process.exit)

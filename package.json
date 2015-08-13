@@ -1,8 +1,7 @@
 {
   "name": "onepixel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "mocha --check-leaks --reporter spec --bail test/**/*",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/**/*"
