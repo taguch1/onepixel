@@ -1,8 +1,9 @@
 {
   "name": "onepixel",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "",
   "scripts": {
+    "start": "./bin/onepixel",
     "test": "mocha --check-leaks --reporter spec --bail test/**/*",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/**/*"
   },
