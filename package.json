@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "start": "./bin/onepixel",
-    "test": "mocha --check-leaks --reporter spec --bail test/**/*",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/**/*"
+    "test": "NODE_ENV=test mocha --check-leaks --reporter spec --bail test/**/*",
+    "test-cov": "NODE_ENV=test istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/**/*"
   },
   "bin": {
     "onepixel": "./bin/onepixel"
@@ -21,13 +21,12 @@
   },
   "homepage": "https://github.com/taguch1/onepixel",
   "dependencies": {
-    "finalhandler": "^0.4.0",
     "morgan": "^1.6.1"
   },
   "devDependencies": {
     "istanbul": "^0.3.17",
-    "mocha": "^2.2.5",
-    "power-assert": "^0.11.0",
-    "supertest": "^1.0.1"
+    "mocha": "^2.3.3",
+    "power-assert": "^1.1.0",
+    "supertest": "^1.1.0"
   }
 }
